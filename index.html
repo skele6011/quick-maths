@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quick Maths Game</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>🧮 Quick Maths</h1>
+        <div id="game-area">
+            <div id="stats">
+                <span>Score: <span id="score">0</span></span>
+                <span>Time: <span id="timer">60</span>s</span>
+                <span>Questions answered: <span id="question-count">0</span></span>
+            </div>
+            <div id="question-area">
+                <p id="question">Press Start to begin!</p>
+                <input type="number" id="answer" disabled>
+                <button id="submit">Submit</button>
+            </div>
+            <button id="start">Start Game</button>
+            <button id="history">History</button>
+            <div id="history-area" class="hidden">
+                <h2>History</h2>
+                <ul id="history-list"></ul>
+            </div>
+        </div>
+        <div id="results" class="hidden">
+            <h2>🎮 Game Results</h2>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <p>Accuracy: <span id="accuracy">0</span>%</p>
+            <button id="play-again">Play Again 🔄</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
