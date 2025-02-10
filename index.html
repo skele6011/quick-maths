@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Maths Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="theme-toggle">
+            <button id="theme-btn" class="theme-btn" data-icon="⚙">⚙</button>
+        </div>
+        <div id="start-screen" class="start-screen active">
+            <h1 class="title">Quick Maths</h1>
+            <p class="subtitle">Test your mental math skills!</p>
+            <div class="start-options">
+                <select id="start-difficulty">
+                    <option value="easy">Easy Mode</option>
+                    <option value="medium">Medium Mode</option>
+                    <option value="hard">Hard Mode</option>
+                </select>
+                <select id="time-limit">
+                    <option value="30">30 Seconds</option>
+                    <option value="60">1 Minute</option>
+                    <option value="120">2 Minutes</option>
+                    <option value="300">5 Minutes</option>
+                </select>
+                <button id="start-game-btn" class="rainbow-btn">Start Challenge</button>
+            </div>
+        </div>
+        <div id="game-screen" class="game-screen">
+            <h1>Quick Maths Challenge</h1>
+            <div class="game-container">
+                <div class="stats">
+                    <span id="score">Score: 0</span>
+                    <span id="timer">Time: 0s</span>
+                </div>
+                <div class="question-container">
+                    <p id="question">Press Start to begin!</p>
+                    <input type="number" id="answer" placeholder="Enter your answer">
+                    <button id="submit">Submit</button>
+                </div>
+                <div class="controls">
+                    <button id="start">Start Game</button>
+                    <select id="difficulty">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div id="feedback" class="feedback"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
